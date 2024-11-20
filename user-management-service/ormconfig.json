@@ -1,0 +1,10 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "root",
+  "database": "secure_microservices_db",
+  "entities": ["models/*.ts"],
+  "synchronize": true
+}

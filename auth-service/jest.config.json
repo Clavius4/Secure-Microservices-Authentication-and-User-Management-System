@@ -1,0 +1,24 @@
+{
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "<rootDir>/tsconfig.json"
+    }
+  },
+  "moduleNameMapper": {
+    "^src/(.*)$": "<rootDir>/src/$1"
+  },
+  "transformIgnorePatterns": [
+    "/node_modules/(?!some-esm-package).+\\.js$"
+  ],
+  "testMatch": [
+    "**/tests/**/*.test.(ts|tsx)"
+  ],
+  "moduleFileExtensions": ["ts", "tsx", "js", "json", "node"],
+  "moduleDirectories": ["node_modules", "src"],
+  "verbose": true
+}
